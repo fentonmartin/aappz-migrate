@@ -39,6 +39,7 @@
         android:layout_above="@id/migrate_action_layout"
         android:layout_below="@id/migrate_title"
         android:fillViewport="true"
+        android:overScrollMode="never"
         android:scrollbars="none">
 
         <TextView
