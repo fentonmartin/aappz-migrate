@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorMigrateBackground"
     tools:context=".MainActivity">
 
     <RelativeLayout
@@ -21,17 +22,42 @@
         android:id="@+id/migrate_action_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true">
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:padding="@dimen/_12sdp">
 
         <Button
             android:id="@+id/migrate_action"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/_4sdp"
-            android:background="@drawable/main_migrate_button"
+            android:background="@drawable/migrate_primary_button"
             android:padding="@dimen/_4sdp"
             android:text="@string/app_name"
-            android:textColor="@color/colorWhite" />
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_14ssp" />
+
+        <Button
+            android:id="@+id/migrate_second_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_4sdp"
+            android:background="@drawable/migrate_secondary_button"
+            android:padding="@dimen/_4sdp"
+            android:text="@string/app_name"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_14ssp" />
+
+        <Button
+            android:id="@+id/migrate_third_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_4sdp"
+            android:background="@drawable/migrate_third_button"
+            android:padding="@dimen/_4sdp"
+            android:text="@string/app_name"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_14ssp" />
 
     </LinearLayout>
 

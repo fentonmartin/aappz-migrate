@@ -4,4 +4,9 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="colorWhite">#FFFFFF</color>
+
+    <color name="colorMigratePrimary">#CC0000</color>
+    <color name="colorMigrateSecondary">#FF9900</color>
+    <color name="colorMigrateThird">#FFCC00</color>
+    <color name="colorMigrateBackground">#FFFFFF</color>
 </resources>
