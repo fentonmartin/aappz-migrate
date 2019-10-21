@@ -6,17 +6,49 @@
     android:background="@color/colorMigrateBackground"
     tools:context=".MainActivity">
 
-    <RelativeLayout
+    <TextView
+        android:id="@+id/migrate_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/migrate_close"
+        android:layout_toLeftOf="@id/migrate_close"
+        android:paddingStart="@dimen/_16sdp"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingEnd="@dimen/_16sdp"
+        android:paddingBottom="@dimen/_8sdp"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_16ssp"
+        android:textStyle="bold"
+        tools:text="Etiam ut scelerisque facilisis mi" />
+
+    <ImageView
+        android:id="@+id/migrate_close"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/_4sdp"
+        android:src="@drawable/ic_close" />
+
+    <ScrollView
         android:id="@+id/migrate_content_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_above="@id/migrate_action_layout"
+        android:layout_below="@id/migrate_title">
 
         <TextView
             android:id="@+id/migrate_content"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_14ssp"
+            tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris convallis turpis nulla, eu sollicitudin erat fermentum at. Nullam vitae leo lectus. Pellentesque tempor nisi at urna finibus consectetur. Mauris sed dolor non orci consequat mattis. Mauris eleifend ultrices diam, vel euismod arcu faucibus vel. Nulla facilisi. Mauris tempus massa quam, at lacinia augue posuere ac. Nunc tellus dui, scelerisque sed diam vel, placerat sollicitudin leo. Nullam eu porta leo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla iaculis mi nunc, vel aliquet est egestas ac. Ut lobortis porttitor sem, eget eleifend mi vulputate at. Aenean quis nisi ac sem lacinia sagittis et sodales felis. Mauris convallis turpis nulla, eu sollicitudin erat fermentum at. Nullam vitae leo lectus. Pellentesque tempor nisi at urna finibus consectetur. Mauris sed dolor non orci consequat mattis. Mauris eleifend ultrices diam, vel euismod arcu faucibus vel. Nulla facilisi. Mauris tempus massa quam, at lacinia augue posuere ac. Nunc tellus dui, scelerisque sed diam vel, placerat sollicitudin leo. Nullam eu porta leo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla iaculis mi nunc, vel aliquet est egestas ac. Ut lobortis porttitor sem, eget eleifend mi vulputate at." />
 
-    </RelativeLayout>
+    </ScrollView>
 
     <LinearLayout
         android:id="@+id/migrate_action_layout"
@@ -46,7 +78,8 @@
             android:padding="@dimen/_4sdp"
             android:text="@string/app_name"
             android:textColor="@color/colorWhite"
-            android:textSize="@dimen/_14ssp" />
+            android:textSize="@dimen/_14ssp"
+            android:visibility="gone" />
 
         <Button
             android:id="@+id/migrate_third_action"
@@ -57,7 +90,8 @@
             android:padding="@dimen/_4sdp"
             android:text="@string/app_name"
             android:textColor="@color/colorWhite"
-            android:textSize="@dimen/_14ssp" />
+            android:textSize="@dimen/_14ssp"
+            android:visibility="gone" />
 
     </LinearLayout>
 

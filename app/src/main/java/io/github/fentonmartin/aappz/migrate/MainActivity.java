@@ -15,12 +15,14 @@ public class MainActivity extends AappZ {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setActionBarFull();
         setContentView(R.layout.activity_main);
+        setActionBarHide();
 
         buttonAction = findViewById(R.id.migrate_action);
         textContent = findViewById(R.id.migrate_content);
 
-        setLayout("This is an example of content migration", "Migrate Now!");
+//        setLayout("This is an example of content migration", "Migrate Now!");
     }
 
     private void setLayout(String text, String button) {
