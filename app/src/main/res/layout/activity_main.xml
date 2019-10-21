@@ -38,12 +38,14 @@
         android:layout_height="match_parent"
         android:layout_above="@id/migrate_action_layout"
         android:layout_below="@id/migrate_title"
+        android:fillViewport="true"
         android:scrollbars="none">
 
         <TextView
             android:id="@+id/migrate_content"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center_vertical"
             android:paddingStart="@dimen/_16sdp"
             android:paddingEnd="@dimen/_16sdp"
             android:textColor="@color/colorBlack"
