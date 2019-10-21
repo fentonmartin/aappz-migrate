@@ -33,7 +33,6 @@
         tools:ignore="ContentDescription" />
 
     <ScrollView
-        android:id="@+id/migrate_content_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@id/migrate_action_layout"
