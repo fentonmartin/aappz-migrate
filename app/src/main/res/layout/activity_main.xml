@@ -29,7 +29,8 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_margin="@dimen/_4sdp"
-        android:src="@drawable/ic_close" />
+        android:src="@drawable/ic_close"
+        tools:ignore="ContentDescription" />
 
     <ScrollView
         android:id="@+id/migrate_content_layout"
